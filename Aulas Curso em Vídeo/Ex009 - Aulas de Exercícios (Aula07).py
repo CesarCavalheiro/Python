@@ -1,0 +1,3 @@
+numero = int(input('Digite um número: '))
+print(f'A tabuada do 0 ao 10 do seu número é: \n {numero} x 0 = {numero*0:3} \n {numero} x 1 = {numero*1:3} \n {numero} x 2 = {numero*2:3} \n {numero} x 3 = {numero*3:3} \n {numero} x 4 = {numero*4:3}')
+print(f' {numero} x 5 = {numero*5:3} \n {numero} x 6 = {numero*6:3} \n {numero} x 7 = {numero*7:3} \n {numero} x 8 = {numero*8:3} \n {numero} x 9 = {numero*9:3} \n {numero} x 10 = {numero*10}')
