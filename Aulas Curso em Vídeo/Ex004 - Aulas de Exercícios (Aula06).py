@@ -1,0 +1,8 @@
+informacao = input('Digite algo: ')
+print (f'O tipo primitivo do que você digitou é: {type(informacao)}')
+print(f'Só tem espaços? {informacao.isspace()}')
+print(f'É um número? {informacao.isnumeric()}')
+print(f'É Alfanumérico? {informacao.isalpha()}')
+print(f'Está tudo em Maiúsculas? {informacao.isupper()}')
+print(f'Está tudo em Minúsculo? {informacao.islower()}')
+print(f'Está Capitalizada? {informacao.istitle()}')
