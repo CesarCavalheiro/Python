@@ -1,1 +1,12 @@
-https://www.youtube.com/watch?v=j9bYDjaAYzw&ab_channel=CursoemV%C3%ADdeo parei no minuto 5
+valor = float(input('Qual o valor da casa? '))
+salario = float(input('Qual é o seu salário? '))
+prazo = int(input('Em quanto tempo você pretende pagar? '))
+parcela = salario * 0.30
+if parcela * prazo < valor:
+    print('Financiamento reprovado!! Somatório do valor das parcelas menor que o valor do imóvel!!')
+elif valor/prazo > parcela:
+    print('Financiamento reprovado!! Infelizmente o valor da parcela que você pode pagar não é suficiente!')
+else:
+    print('Parabéns financiamento aprovado!!')
+
+    https://www.youtube.com/watch?v=j9bYDjaAYzw parei no minuto 18:05
