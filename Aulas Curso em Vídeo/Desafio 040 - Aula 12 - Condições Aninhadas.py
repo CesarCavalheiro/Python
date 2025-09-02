@@ -8,4 +8,4 @@ elif media <= 6.9:
 else: 
     print(f'Sua média é {media}, você ficou acima de 6.9! Status: APROVADO!') 
 
-https://www.youtube.com/watch?v=j9bYDjaAYzw&ab_channel=CursoemV%C3%ADdeo parei no minuto 21:47
+
