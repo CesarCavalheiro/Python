@@ -5,6 +5,3 @@ if ((reta_a + reta_b > reta_c) and (reta_a + reta_c > reta_b) and (reta_b + reta
     print('Suas 3 retas formam um triângulo!')
 else:
     print('Suas 3 retas não formam um triângulo!')
-
-
-https://www.youtube.com/watch?v=j9bYDjaAYzw&ab_channel=CursoemV%C3%ADdeo
