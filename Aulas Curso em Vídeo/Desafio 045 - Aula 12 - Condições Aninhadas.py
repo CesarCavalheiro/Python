@@ -22,3 +22,5 @@ elif jogador == 3 and maquina == 2:
     print('Você escolheu tesoura, a máquina escolheu papel! A tesoura corta o papel, a máquina ganhou!!')    
 elif jogador == 2 and maquina == 3:
     print('Você escolheu papel, a máquina escolheu tesoura! A tesoura corta o papel, a máquina ganhou!!')    
+
+    https://www.youtube.com/watch?v=j9bYDjaAYzw&ab_channel=CursoemV%C3%ADdeo parei no minuto 26:11
