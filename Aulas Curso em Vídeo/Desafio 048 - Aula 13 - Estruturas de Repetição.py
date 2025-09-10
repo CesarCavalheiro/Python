@@ -1,3 +1,4 @@
-for c in range(1, 501, 3):
+soma = sum(c for c in range(1, 501) if c % 2 != 0 and c % 3 == 0)
+print(soma)
 
-    https://www.youtube.com/watch?v=cL4YDtFnCt4&ab_channel=CursoemV%C3%ADdeo parei no minuto 28
+    
