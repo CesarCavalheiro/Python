@@ -1,1 +1,3 @@
-https://www.youtube.com/watch?v=cL4YDtFnCt4&ab_channel=CursoemV%C3%ADdeo parei no minuto 29:09
+numero = int(input("Digite seu número: "))
+for multiplicador in range(0,11):
+    print(numero * multiplicador)
