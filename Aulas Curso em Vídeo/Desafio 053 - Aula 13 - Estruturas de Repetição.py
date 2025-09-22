@@ -1,2 +1,10 @@
+frase = input('Digite a sua Frase: ')
+frase = frase.replace(' ','').lower()
+invertida = frase[::-1]
+if frase == invertida:
+   print('Sua frase é um palíndromo!!')
+else:
+   print('Sua frase não é um palíndromo!!')
 
-   #https://www.youtube.com/watch?v=cL4YDtFnCt4&ab_channel=CursoemV%C3%ADdeo parei no minuto 30:42
+
+
