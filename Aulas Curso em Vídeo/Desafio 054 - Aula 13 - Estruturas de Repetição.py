@@ -1,12 +1,19 @@
+from datetime import datetime
+ano_atual = datetime.now().year
+maiores = 0
+menores = 0
 for c in range (1,8):
-        dt_nasc = int(input(f'Digite a Data de Nascimento da {c}ª Pessoa: '))
-        if dt_nasc <= 18:
-                print('Você tem menos que 18 anos, você ainda é menor de idade.')
+        nasc = int(input(f'Digite o ano de Nascimento da {c}ª Pessoa: '))
+        idade = ano_atual - nasc
+
+        if idade >= 18:
+                maiores +=1
         else:
-                print('Você tem 18 ou +, você já é maior de idade.')
-                
+                menores +=1
+print(f'\nTotal de maiores de idade:{maiores}')
+print(f'Total de menores de idade:{menores}')
+
+                        
    
    
-   
-   
-   #https://www.youtube.com/watch?v=cL4YDtFnCt4&ab_channel=CursoemV%C3%ADdeo parei no minuto 32:16
+  
