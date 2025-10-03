@@ -24,3 +24,11 @@ for i in range(len(sexos)):
     if sexos[i].upper()== 'F' and idades[i] <20:
         mulheres_menos_de_20 += 1
 print(f'A quantidade de mulheres com menos de 20 anos é: {mulheres_menos_de_20}')
+for i in range(len(nomes)):
+    if sexos[i].upper() == 'M' and idades[i] > idade_mais_velha:
+        idade_mais_velha = idades[i]
+        homem_mais_velho = nomes[i]
+if homem_mais_velho:
+    print(f'O homem mais velho é {homem_mais_velho}, com {idade_mais_velha}')
+else:
+    print('Não há homens na lista.')
