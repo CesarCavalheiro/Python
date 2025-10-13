@@ -2,7 +2,7 @@ from random import randint
 n = randint(0,10)
 tentativa = int(input('Digite um número de 0 a 10 e tente adivinhar em qual número o computador pensou: '))
 while n != tentativa:
-    print(f'O computador escolheu {n}, você digitou {tentativa}. Você errou, tente novamente, digite um número diferente: ')
+print(f'O computador escolheu {n}, você digitou {tentativa}. Você errou, tente novamente, digite um número diferente: ')
 if n == tentativa:
     print(f'O computador escolheu {n}, você digitou {tentativa}. Você acertou, parabéns!')
     # else:
