@@ -11,9 +11,8 @@
 print('Calculadora de fatorial')
 n = int(input('\nDigite seu número '))
 fatorial = 1
-while fatorial != n:
+while n > 0:
     fatorial *= n
-    print(f'O fatorial de {n} é {fatorial}')
+    n -= 1
+print(f'O fatorial de {n} é {fatorial}')
 
-
-    https://www.youtube.com/watch?v=LH6OIn2lBaI&t=1818s
