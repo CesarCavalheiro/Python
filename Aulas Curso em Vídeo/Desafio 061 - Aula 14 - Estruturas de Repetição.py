@@ -1,4 +1,28 @@
 print('Calculadora de P.A')
+
+pa = int(input('\nDigite o primeiro termo: '))
+razao = int(input('\nDigite a razão da P.A: '))
+contador_total = 0
+novostermos = 1
+
+while True:
+    novostermos = int(input('\nVocê gostaria de mais quantos termos? '))
+    if novostermos == 0:
+        print('\nVocê escolheu encerrar o programa.')
+        print('\nEncerrado!!!')
+        break
+    contador = 0
+    while contador < novostermos:
+        termo = pa + razao * contador_total
+        print(termo, end=' ')
+        contador += 1
+        contador_total += 1
+
+    print()
+
+#tentar arrumar o código abaixo
+
+print('Calculadora de P.A')
 termo = int(input('\nDigite o termo: '))   
 razao = int(input('\nDigite a razão: '))
 nt = int(input('\nVocê gostaria de mostrar quantos termos? '))
@@ -16,10 +40,8 @@ if t != 0:
         pa = termo + razao * contador
         contador += 1
         print(pa)
+    t = int(input('\nVocê gostaria de mostrar mais quantos termos? '))
 else:
     print('Ok, Encerrado o programa!')
     print('Programa encerrado!')
-
-
-
 
