@@ -1,6 +1,11 @@
-maistermos = int(input('Você gostaria de ver mais quantos termos? '))
-    # contador = 0
-    # while maistermos < contador:
-    #     pa = pa + razao * contador
-    #     contador += 1
-    #     print(pa)
+
+
+# while contador < numtermos:
+#     while True:
+#         maistermos = int(input('Quantos termos mais você gostaria de mostrar? '))
+#         if maistermos == 0:
+#             break
+#         else: 
+#             pa = pa + razao * contador
+#             contador += 1
+#             print(pa)
