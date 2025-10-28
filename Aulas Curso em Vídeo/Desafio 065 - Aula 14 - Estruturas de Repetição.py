@@ -1,11 +1,15 @@
 print('Calculadora de números aleatórios!!')
-while True:
-    cond = str()
-    n = int(input('\nDigite o número que você gostaria de somar: '))
-    cond = 'Você gostaria de continuar? '
+cond = ('sim')
+# n = int(input('\nDigite o número que você gostaria de somar: '))
+# cond = str(input('Você gostaria de continuar? '))
+while cond == 'sim':
     if cond == 'sim':
-        ntotal = int()
-        n = int(input('\nDigite o número que você gostaria de somar: '))
-        ntotal = n + ntotal
-        cond = 'Você gostaria de continuar? '
+    n = int(input('\nDigite o número que você gostaria de somar: '))
+    cond = str(input('\nVocê gostaria de continuar? '))
+    ntotal = int()
+    n = int(input('\nDigite o número que você gostaria de somar: '))
+    cond = input('\nVocê gostaria de continuar? ')
+    ntotal = n + ntotal
+
+        
     
