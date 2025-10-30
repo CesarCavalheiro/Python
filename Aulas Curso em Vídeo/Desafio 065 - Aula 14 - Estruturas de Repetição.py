@@ -1,24 +1,16 @@
 print('Calculadora de números aleatórios!!')
-cond = 'SIM'
+cond = ['sim', 'não']
 numtotal = 0
 contador = 0
 numeros = []
 while True:
-    if cond == 'SIM':
+    if cond == cond[0]:
         num = int(input('\nDigite o número que você gostaria de adicionar na sua soma: '))
-        cond = str(input('\nVocê gostaria de continuar somando: ')).upper()
+        cond = str(input('\nVocê gostaria de continuar somando: ')).lower()
         numeros.append(num)
         numtotal = num + numtotal
         contador += 1
-    elif cond != 'SIM' or 'NÃO':
-        print('\nVocê digitou um comando inválido, a condição aceita para essa questão é somente Sim ou Não!')
-        num = int(input('\nDigite o número que você gostaria de adicionar na sua soma: '))
-        cond = str(input('\nVocê gostaria de continuar somando: ')).upper()
-        numeros.append(num)
-        numtotal = num + numtotal
-        contador += 1
-        break
-    else:
+    elif cond == cond[1]:
         print('\nVocê escolheu sair!')
         print('\nEncerrando o programa!!!')
         break
