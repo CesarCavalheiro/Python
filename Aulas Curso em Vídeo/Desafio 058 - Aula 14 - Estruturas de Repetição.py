@@ -9,5 +9,3 @@ while n != tentativa:
 print(f'O computador escolheu {n}, você digitou {tentativa}. Você precisou de {ntentativa} tentativas, mas acertou, parabéns!')
     
 
-
-#https://www.youtube.com/watch?v=LH6OIn2lBaI
