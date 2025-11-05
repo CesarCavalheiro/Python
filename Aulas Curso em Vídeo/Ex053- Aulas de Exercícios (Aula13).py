@@ -1,4 +1,5 @@
-frase = str(input('Digite uma frase: '))
+frase = str(input('Digite uma frase: ')).lower()
+frase = frase.replace(' ','')
 invert = frase[::-1]
 
 if frase == invert:
