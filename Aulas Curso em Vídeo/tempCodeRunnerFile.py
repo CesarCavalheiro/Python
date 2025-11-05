@@ -1,11 +1,8 @@
+num = int(input('Digite seu número: '))
 
-
-# while contador < numtermos:
-#     while True:
-#         maistermos = int(input('Quantos termos mais você gostaria de mostrar? '))
-#         if maistermos == 0:
-#             break
-#         else: 
-#             pa = pa + razao * contador
-#             contador += 1
-#             print(pa)
+for c in range(1, num, + 1):
+    if num % c == 0:
+        print('\033[034m', end= '')
+    else:
+        print ('\033[m', end='')
+    print(f'{c} ', end='')
