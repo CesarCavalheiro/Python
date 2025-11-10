@@ -7,11 +7,11 @@ sexof = 0
 anciao = ''
 ancião = ''
 
-for p in range(1, 4):
+for p in range(1, 5):
     print(f'----- {p}ª PESSOA -----')
     nome = str(input('Nome: '))
     idade = int(input('Idade: '))
-    sexo = str(input('Sexo [M/F]: ')).upper()
+    sexo = str(input('Sexo [M/F]: ')).upper().strip()
 
     nomes.append(nome)
     idades.append(idade)
@@ -28,7 +28,7 @@ for p in range(1, 4):
         ancião = nome
 
 
-print(f'\nA média de idade do grupo é {sum(idades)/3:.2f} anos!')
+print(f'\nA média de idade do grupo é {sum(idades)/4:.2f} anos!')
 
 if sexof < 3:
     print(f'\nO homem mais velho do grupo tem {anciao} anos e seu nome é {ancião}!')
