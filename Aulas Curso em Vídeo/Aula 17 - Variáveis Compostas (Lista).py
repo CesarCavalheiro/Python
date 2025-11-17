@@ -1,7 +1,7 @@
-lista_A = ['Banana', 'Maça', 'Laranja']
-lista_B = lista_A[:]
+lista = []
+lista.append(1)
+lista.append(5)
+lista.append(6)
 
-lista_B[1] = 'Morango'
-
-print(f'Essa é a nossa lista A {lista_A}')
-print(f'Essa é a nossa lista B {lista_B}')
+for p, n in enumerate(lista):
+    print(f'Na posição {p} encontrei o número: {n}')
