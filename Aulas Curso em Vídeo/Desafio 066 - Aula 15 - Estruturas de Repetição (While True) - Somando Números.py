@@ -1,7 +1,7 @@
 cont = n = 0
 total = 0
 while True:
-    n = int(input('Digite o valor para o somatório (Para para digite 999): '))
+    n = int(input('Digite o valor para o somatório (Para sair digite 999): '))
     cont += 1
     if n == 999:
         break
