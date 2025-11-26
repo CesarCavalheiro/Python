@@ -1,24 +1,27 @@
 pessoas = []
+
+cont = 0
+
 while True:
-    nome = input("Nome: ")
-    peso = float(input("Peso: "))
+    nome = input('\nNome: ')
+    peso = float(input('\nPeso: '))
 
     pessoas.append([nome, peso])
+    cont += 1
 
-    cond = input("Quer continuar? [S/N] ").strip().lower()
+    maior = max(p[1] for p in pessoas)
+    menor = min(p[1] for p in pessoas)
+
+    maiorpessoa = [p[0] for p in pessoas if p[1] == maior]
+    menorpessoa = [p[0] for p in pessoas if p[1] == menor]
+   
+
+    cond = input('\nQuer continuar? [S/N] ').strip().lower()
     if cond == 'n':
         break
 
-# Descobrir o menor peso
-menor_peso = pessoas[0][1]  # peso da primeira pessoa
-for p in pessoas:
-    if p[1] < menor_peso:
-        menor_peso = p[1]
+print(f'\nForam cadastradas um total de {cont} pessoas')
 
-# Mostrar todos que têm esse peso
-print(f"\nMenor peso encontrado: {menor_peso} kg")
-print("Pessoa(s) com esse peso:")
+print(f'\nO Maior peso foi de {maior}Kg. Peso de {maiorpessoa}')
 
-for p in pessoas:
-    if p[1] == menor_peso:
-        print(f" - {p[0]}")
+print(f'\nO Menor peso foi de {menor}Kg. Peso de {menorpessoa}')
