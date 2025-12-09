@@ -19,6 +19,6 @@ for l in range(0,7):
         impares.append(valores)
         impares.sort()
 
-    print(f'\nOs valores pares digitados foram: {pares}')
+print(f'\nOs valores pares digitados foram: {pares}')
 
-    print(f'\nOs valores impares digitados foram: {impares}')
+print(f'\nOs valores impares digitados foram: {impares}')
