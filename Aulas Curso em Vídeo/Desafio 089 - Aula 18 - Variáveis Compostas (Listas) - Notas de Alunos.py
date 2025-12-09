@@ -11,7 +11,7 @@ while pergunta == 's':
     nota2 = float(input('\n2ª Nota: ').replace(',' , '.'))
     média = (nota1 + nota2) / 2
     
-    lista.append([nome, [nota1, nota2],média])
+    lista.append([nome, [nota1, nota2], média])
 
     pergunta = str(input('\nQuer continuar? [S/N]: ').lower())
 
@@ -34,6 +34,8 @@ while True:
     aluno = int(input('Mostrar nota de qual aluno? (999 interrompe): '))
 
     if aluno == 999:
+        print('Finalizando')
+        print('VOLTE SEMPRE')
         break
     
     if aluno < 1 or aluno > len(lista):
@@ -41,4 +43,6 @@ while True:
         continue
 
     notas = lista[aluno -1][1]
+    nome = lista[aluno -1][0]
     print(f'As notas de {nome} são {notas} ')
+    print('='*40)
