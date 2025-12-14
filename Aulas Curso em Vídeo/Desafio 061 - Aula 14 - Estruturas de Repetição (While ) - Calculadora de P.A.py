@@ -7,3 +7,5 @@ while contador < numtermos:
     pa = termo + razao * contador
     contador += 1
     print(pa)
+
+   

@@ -7,3 +7,5 @@ pa = termo + (10 - 1) * razao
 for t in range(termo, pa, razao):
     print(t, end=' --> ') 
 print('ACABOU')
+
+
