@@ -1,5 +1,0 @@
-n = int(input('Digite um número para calcular o seu fatorial: '))
-for num in range (0 , n+1):
-    ntotal = n * n-1
-
-    print(ntotal)

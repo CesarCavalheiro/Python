@@ -10,9 +10,11 @@
 
 print('Calculadora de fatorial')
 n = int(input('\nDigite seu número '))
+num = n
 fatorial = 1
 while n > 0:
     fatorial *= n
     n -= 1
-print(f'O fatorial de {n} é {fatorial}')
+
+print(f'O fatorial de {num} é {fatorial}')
 
