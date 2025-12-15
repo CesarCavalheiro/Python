@@ -7,36 +7,46 @@ termo = int(input('\nDigite o termo: '))
 razão = int(input('\nDigite a razão '))
 print()
 
-termoinicial = termo
+cont = 0
 
-cont = 1
-
-while cont <= 10:
+while cont < 10:
 
     print(f'{termo} -> ' , end='')
 
-    termo += razão
-
     cont += 1
+
+    termo += razão
 
 print('PAUSA')
 
-+-96+999999999999999
+while True:
 
-opção = 0
-while cont <= (opção + cont):
+    mais = int(input('\nQuantos termos a mais você quer mostrar? '))
+    print()
 
-    opção = int(input('Quantos termos mais você gostaria de mostrar? '))
+    nmais = mais
 
-    print(cont)
+    if nmais == 0:
+        print(f'Progressão finalizada com {cont} termos mostrados.')
 
-#     print(f'{termo} -> ' , end='')
+        print()
+        print()
+        print()
 
-#     termo += razão
+        break
 
-#     cont += 1
+    while mais > 0:
+
+        mais -= 1
+
+        print(f'{termo} ->' , end=' ')
+
+        cont += 1
+
+        termo += razão
+
+    print('PAUSA')
+
+    
 
 
-print()
-print()
-print()
