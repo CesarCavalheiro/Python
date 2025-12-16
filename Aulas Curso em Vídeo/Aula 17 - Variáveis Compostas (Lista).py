@@ -1,20 +1,12 @@
-lista = []
-listanotas = []
-cont = 0
-pergunta = 's'
+from random import randint
 
-while pergunta == 's':
+copo = randint(1,3)
 
-    cont += 1
-    nome = str(input(f'\nNome do {cont}º aluno: '))
-    nota1 = float(input('\n1ª Nota: ').replace(',' , '.'))
-    nota2 = float(input('\n2ª Nota: ').replace(',' , '.'))
-    media = (nota1 + nota2) / 2
+jogador = int(input('Escolha em qual dos 3 copos pode estar a bolinha: '))
+
+if copo == jogador:
+    print(f'Parabéns você escolheu o copo {jogador} e o pc botou a bolinha no copo {copo}')
+
+else:
+    print(f'Que pena, você errou. Você escolheu o copo {jogador} e o pc botou a bolinha no copo {copo}' )
     
-    lista.append([nome, [nota1, nota2], media])
-
-    pergunta = str(input('\nQuer continuar? [S/N]: ').lower())
-
-
-print('-='*20)
-print(f'{"Nº":<6}{"NOME":<20}{"MÉDIA":>10}')
