@@ -12,6 +12,6 @@ while True:
         print('ATENÇÃO!!! Seu número está fora do intervalo entre 0 e 20.')
 
     else:
-        print(f'Você digitou' , {extenso[n]})
+        print(f'Você digitou: {extenso[n]}')
 
    
