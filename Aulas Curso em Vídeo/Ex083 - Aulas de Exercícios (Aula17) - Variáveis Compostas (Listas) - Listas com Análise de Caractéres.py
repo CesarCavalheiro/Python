@@ -1,16 +1,21 @@
-cont_esquerdo = cont_direito = 0
-
 expressão = str(input('Digite sua expressão: '))
+pilha = []
+
 for caracter in expressão:
 
     if caracter == '(':
-        cont_esquerdo += 1
+        pilha.append('(')
 
-    if caracter == ')':
-        cont_direito += 1
+    elif caracter == ')':
+        if len(pilha) > 0:
+            pilha.pop()
 
+        else:
+            pilha.append(')')
+            break
 
-if cont_esquerdo == cont_direito:
+if len(pilha) == 0:
+        
     print('Sua expressão é válida')
 
 else:
